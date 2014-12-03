@@ -48,18 +48,16 @@
             <ul class="nav navbar-nav">
             
             
-                <li class="active">
-                    <a href=".">Getting Started</a>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Module Overview <b class="caret"></b></a>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
+                        <li class="active">
+                            <a href=".">Getting Started</a>
+                        </li>
+                    
                         <li >
-                            <a href="../cm_circulation_brief">Circulation</a>
+                            <a href="../cm_circulation_brief">Circulation Overview</a>
                         </li>
                     
                     </ul>
@@ -137,16 +135,19 @@
 <h2 id="logging-in-to-evergreen">Logging in to Evergreen</h2>
 <ul>
 <li>Select the <em>Locale</em> to match your language preference.  </li>
-<li>Enter the <em>Hostname</em> of the Evergreen server you are connecting.  </li>
-<li>Click <em>Test Server</em> to ensure that you are able to reach the server.  You should see ``200 : OK'' indicated in green for <em>Status</em> and <em>Version</em>.  </li>
+<li>
+<p>Enter the <em>Hostname</em> of the Evergreen server you are connecting.</p>
+<p>Production: catalog.sage.eou.edu, Test: sage.eou.edu</p>
+</li>
+<li>
+<p>Click <em>Test Server</em> to ensure that you are able to reach the server.  You should see <code>200 : OK</code> indicated in green for <em>Status</em> and <em>Version</em>.  </p>
+</li>
 </ul>
-<blockquote>
-<p>If <em>Status</em> indicates ``There was an error testing this server'', check for a typo in the <em>Hostname</em> field. The hostname should read: <em>catalog.sage.eou.edu</em>. </p>
-<p>If <em>version</em> indicates ``404 Not Found'', the server does not support the version
+<p>If <strong>Status</strong> indicates <code>There was an error testing this server</code>, check for a typo in the <strong>Hostname</strong> field. The hostname should read: <code>catalog.sage.eou.edu</code>.</p>
+<p>If <strong>Version</strong> indicates <code>404 Not Found</code>, the server does not support the version
 of your staff client. You will need to download the correct version of Evergreen (currently 2.5.1) from </p>
-</blockquote>
 <ul>
-<li>Enter your <em>Username</em> and <em>Password</em>  and  click <em>Login</em>.</li>
+<li>Enter your <strong>Username</strong> and <strong>Password</strong>  and  click <strong>Login</strong>.</li>
 <li>If this is the first time you login from the workstation, you will need to &lt;<register_workstation,register your workstation>&gt;. </li>
 </ul>
 <h2 id="auto-login">Auto Login</h2>
@@ -164,18 +165,16 @@ commands after those commands. </p>
 <li>First, if your workstation will have multiple logins (circ, cat, admin) you need to copy a shortcut for each. There are a couple of ways to do this.</li>
 <li>Right-mouse click and drag icon; upon release select <em>Create Shortcut Here</em>. </li>
 </ul>
-<p>image::media/create_shortcut_here.png[]</p>
+<p><img alt="" src="../images/gs_create_shortcut_here.png" /></p>
 <ul>
 <li>Right-mouse click icon, select <em>Send to</em>, and select <em>Desktop (create shortcut)</em>.</li>
 </ul>
-<p>image::media/send_to_desktop.png[]</p>
+<p><img alt="" src="../images/gs_send_to_desktop.png" /></p>
 <ul>
-<li>Right-mouse click the new shortcut and select <em>Properties</em>.
-+
-image::media/shortcut_properties.png[]</li>
+<li>Right-mouse click the new shortcut and select <em>Properties</em>.</li>
 </ul>
+<p><img alt="" src="../images/gs_shortcut_properties.png" /></p>
 <p>Listed in the <em>Target</em> box you will see something like the following path surrounded by quotation marks: "C:\Program Files\Evergreen Staff Client Sage\evergreen.exe"</p>
-<p>image::media/shortcut_properties_window.png[]</p>
 <ul>
 <li>Place your cursor after the ending quotation mark and enter a space after the last quotation mark.</li>
 </ul>
@@ -189,7 +188,6 @@ image::media/shortcut_properties.png[]</li>
 when you manually login to the client.
     ilshost catalog.sage.eou.edu</li>
 </ul>
-<p>image::media/auto_login.png[]</p>
 <blockquote>
 <p>When you double-click on the new shortcut it may seem like nothing is happening, but it really is! It takes the program a few moments to digest the
 new requests and to do the login.</p>
