@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>Circulation - Sage Documentation Site</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Sage Documentation Site</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../getting_started">Getting Started</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Module Overview <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href=".">Circulation</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../circulation_module">Circulation</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../cataloging_module">Cataloging</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../opac">OPAC</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../administration">Administration</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li >
+                    <a rel="next" href="../getting_started">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../circulation_module">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#circulation-in-brief">Circulation in Brief</a></li>
+        
+            <li><a href="#check-out-items">Check Out Items</a></li>
+        
+            <li><a href="#check-in-items">Check In Items</a></li>
+        
+            <li><a href="#renew-items">Renew Items</a></li>
+        
+            <li><a href="#register-patron">Register Patron</a></li>
+        
+            <li><a href="#pending-patrons">Pending Patrons</a></li>
+        
+            <li><a href="#retrieve-last-patron">Retrieve Last Patron</a></li>
+        
+            <li><a href="#capture-holds">Capture Holds</a></li>
+        
+            <li><a href="#pull-list-for-hold-requests">Pull List for Hold Requests</a></li>
+        
+            <li><a href="#browse-holds-shelf">Browse Holds Shelf</a></li>
+        
+            <li><a href="#clear-holds-shelf">Clear Holds Shelf</a></li>
+        
+            <li><a href="#place-hold">Place Hold</a></li>
+        
+            <li><a href="#show-item-status-by-barcode">Show Item Status by Barcode</a></li>
+        
+            <li><a href="#retrieve-patron-by-barcode">Retrieve Patron by Barcode</a></li>
+        
+            <li><a href="#verify-credentials">Verify Credentials</a></li>
+        
+            <li><a href="#replace-barcode">Replace Barcode</a></li>
+        
+            <li><a href="#record-in-house-use">Record In-House Use</a></li>
+        
+            <li><a href="#scan-item-as-missing-pieces">Scan Item as Missing Pieces</a></li>
+        
+            <li><a href="#re-print-last">Re-print Last</a></li>
+        
+            <li><a href="#enter-offline-interface">Enter Offline Interface</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p><center></p>
+<h1 id="circulation-in-brief">Circulation in Brief</h1>
+<p></center>
+When we talk about the "Circulation" portion of Evergreen, we are talking primarily about the features that roughly correspond to the options available on the "Circulation" menu option of the staff client.</p>
+<p>When you go to the "Circulation" section in the top menu of Evergreen, this is what you're looking at:</p>
+<p><img alt="" src="../images/cm_circulation_menu.png" /></p>
+<h2 id="check-out-items">Check Out Items</h2>
+<p>This brings you to the checkout screen where you enter/scan the patron's barcode. If you are scanning in the item, there is no need to hit "Enter" after the barcode is in the field. Most scanners automatically complete that step for you.</p>
+<p><img alt="" src="../images/cm_checking_out_items.png" /></p>
+<h2 id="check-in-items">Check In Items</h2>
+<p>This is the interface where you check in holdings within Evergreen.</p>
+<p><img alt="" src="../images/cm_checkinscreen.png" /></p>
+<hr />
+<ul>
+<li><em>Enter Barcode</em>: Where the item barcode gets scanned in.</li>
+<li><em>Effective Date</em>: Where you can manually set the check in time. Useful for when you want to backdate checkins for processing a night drop. The green check in banner will turn red to let you know that the check in date does not match the current one.</li>
+<li><em>Actions for Selected Items</em>: You can use these options after selecting one, or more copies after having being checked in. Note: If you're simply looking to edit a group of items or check their status, it's better to enter the item barcodes in the "Item Status" screen. That way, you will not trigger any transits, hold notices, or other alerts attached to the copies.</li>
+</ul>
+<hr />
+<p><img alt="" src="../images/cm_actionsforselcted.png" /></p>
+<ul>
+<li><em>Copy to Clipboard</em>: Allows you to copy a field from an item, group of items in the checkin screen. Best for using on single items when you need something numeric like a barcode. The fields will pop up in a window. Click on the field you want to copy. They will look like a website link. There is no confirmation message, but the information is saved to your clipboard and can be pasted.</li>
+<li><em>Add to Item Bucket</em>: See Cataloger Section.</li>
+<li><em>Show in Catalog</em>: Brings up the OPAC entry that you would see as a patron, or after having searched for that item using the search interface.</li>
+<li><em>Show Holds on Bib</em>: Displays the number of holds attached to that record. Not just that particular item, but the record it is attached to. This can include copies from outside of your library.</li>
+<li>
+<p><em>Show Item Details</em>: Brings up the "Item Status" screen that lists owning/circulating library information, circulation history, hold/transit information if it is captured for a hold or transit, and a read-only view of the MARC record. These is a good section to look to for item troubleshooting when looking for copy location, holdablity , and other information the Sage team can use when looking at misbehaving items.
+image:images/cm_itemstatus.png[]</p>
+</li>
+<li>
+<p><em>Show Last Few Circulations</em>: Brings up the last 3 patrons that have checked out that specific title.</p>
+</li>
+<li><em>Retrieve Last Patron who circulated item</em>: Brings up the last patron's record.</li>
+<li><em>Edit Item Attributes</em>: See Cataloging</li>
+<li><em>Backdate Post-Checkin</em>: When you've checked in an item normally that should have gone been checked in at an earlier date</li>
+<li><em>Mark Item Damaged</em>: Changes Item status to "Damaged". Will not allow it to circulate.</li>
+<li><em>Mark Item as Missing Pieces</em>: Good for when an Audio Book comes back missing a cd, but you still wish to check in the item.</li>
+<li><em>Abort Transit</em>: If you have checked in an item that is getting routed incorrectly for a hold or other purpose. This will cancel the transit to that other library. You will still need to cancel the hold, if that was the reason, however.</li>
+<li><em>Print Spine Label</em>: See Cataloging</li>
+<li><em>Save Columns</em>: Allows you to save the adjustments to the on screen information settings and make them the default for your workstation. These adjustments are made through the column picker:</li>
+</ul>
+<h2 id="renew-items">Renew Items</h2>
+<p>Similar to the "Check In Items" screen, only tailored for renewing batches of items. This is useful if a patron, or staff member needs items renewed for an amount of time with a specific due date.</p>
+<h2 id="register-patron">Register Patron</h2>
+<p>When you wish to add a new patron to the Sage Library System. Make sure that you have checked that the patron is not already in the system (no duplicate patron accounts) or they have simply gone inactive. Search for the patron with "Include inactive patrons?" checked and "Limit results to patrons in" to: Sage Library System.</p>
+<h2 id="pending-patrons">Pending Patrons</h2>
+<p>Not Used in Sage.</p>
+<h2 id="retrieve-last-patron">Retrieve Last Patron</h2>
+<p>Were you editing/checking out items to a patron and accidentally closed their tab? Select this option to bring back the last active patron tab within Evergreen.</p>
+<h2 id="capture-holds">Capture Holds</h2>
+<p>While you can use this option, most libraries choose to use the general purpose "Check In" screen to process holds. This allows you to process items, say, from a book drop where not all of them are going to be holds. Some are simply getting put back onto the shelf.</p>
+<h2 id="pull-list-for-hold-requests">Pull List for Hold Requests</h2>
+<p>Allows you to see what books other libraries are requesting you to put in transit for a hold or other reason within Sage.</p>
+<h2 id="browse-holds-shelf">Browse Holds Shelf</h2>
+<p>This allows you to see what titles are marked as being on your Hold Shelf.</p>
+<h2 id="clear-holds-shelf">Clear Holds Shelf</h2>
+<p>An interface to clear holds that have expired off of your hold shelf. You would make sure that the Pickup Library is set to your library, check "View Cearable Holds" and then look at the length of time the holds have been on the shelf. If it has been longer than it should, or the hold needs to be put back into circulation, select one/multiple items and then Select "Clear These Holds" -- this will cancel the hold and send an email (if configured) to the patron whose hold was cancelled</p>
+<blockquote>
+<p>You still need to check the item back in to reset its status from "On Holds Shelf" and trigger any transits.</p>
+</blockquote>
+<h2 id="place-hold">Place Hold</h2>
+<p>Has the same effect as "New Search of the Catalog".</p>
+<h2 id="show-item-status-by-barcode">Show Item Status by Barcode</h2>
+<p>This brings you to the "Item Status" screen as well. Here you can check an item's condition/information/transit hold info.</p>
+<h2 id="retrieve-patron-by-barcode">Retrieve Patron by Barcode</h2>
+<p>This is the same as clicking the "Check Out" button.</p>
+<h2 id="verify-credentials">Verify Credentials</h2>
+<p>If a patron is unsure of their password, but wants to check with you, you can use this option to enter their user name/barcode or a combination along with their assumed password. You will get a green "Succces testing credentials" return if the password for the account is correct.</p>
+<h2 id="replace-barcode">Replace Barcode</h2>
+<p>This is more of a cataloger option. Replaces the barcode on an item.</p>
+<h2 id="record-in-house-use">Record In-House Use</h2>
+<p>If you have laptops, reference books, or other items that you don't circulate, but would like to record as a statistic, use this interface. These statistics are kept seperate from the general circulation statistics for an item.</p>
+<h2 id="scan-item-as-missing-pieces">Scan Item as Missing Pieces</h2>
+<p>Will mark an Item as damaged and prompt you to write a note for the missing pieces. When checked the pieces are returned, check the item back in to clear the alerts and make sure the correct pieces have been added to the item.</p>
+<h2 id="re-print-last">Re-print Last</h2>
+<p>Will reprint the last notice Evergreen produced</p>
+<h2 id="enter-offline-interface">Enter Offline Interface</h2>
+<p>This allows you to check in items and register patrons when connectivity to the Internet/Evergreen has been interrupted.</p>
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/prettify-1.0.min.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>
