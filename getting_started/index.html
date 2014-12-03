@@ -119,12 +119,6 @@
         
             <li><a href="#logging-in-to-evergreen">Logging in to Evergreen</a></li>
         
-            <li><a href="#standalone-interface">Standalone Interface</a></li>
-        
-            <li><a href="#preset-tabs-in-evergreen-client">Preset Tabs in Evergreen Client</a></li>
-        
-            <li><a href="#useful-tab-codes">Useful Tab Codes</a></li>
-        
             <li><a href="#auto-login">Auto Login</a></li>
         
             <li><a href="#logging-out">Logging Out</a></li>
@@ -144,88 +138,17 @@
 <ul>
 <li>Select the <em>Locale</em> to match your language preference.  </li>
 <li>Enter the <em>Hostname</em> of the Evergreen server you are connecting.  </li>
-<li>Click <em>Test Server</em> to ensure that you are able to reach the server.  You should see ``200 : OK'' indicated in green for <em>Status</em> and <em>Version</em>.<br />
-+</li>
+<li>Click <em>Test Server</em> to ensure that you are able to reach the server.  You should see ``200 : OK'' indicated in green for <em>Status</em> and <em>Version</em>.  </li>
 </ul>
-<p>If <em>Status</em> indicates ``There was an error testing this server'', check for a typo<br />
-in the <em>Hostname</em> field or ask your administrator for the correct <em>Hostname</em>
-to use. </p>
-<p>IF <em>version</em> indicates ``404 Not Found'', the server does not support the version
-of your staff client. You will need to download the correct version or contact
-your system administrator. </p>
-<p>If your server has a self-signed SSL certificate, you may need to click <em>Add SSL Exception</em> 
-in order to login.
-+
-. Enter your <em>Username</em> and <em>Password</em>  and  click <em>Login</em>.
-. If this is the first time you login from the workstation, you will
-need to &lt;<register_workstation,register your workstation>&gt;. </p>
-<h2 id="standalone-interface">Standalone Interface</h2>
-<p>indexterm:[staff client, standalone interface]</p>
-<p>If your connection to Evergreen is lost, click <em>Standalone
-Interface</em> to circulate items or register patrons while connection is down. </p>
-<p>[[preset_tabs]]</p>
-<h2 id="preset-tabs-in-evergreen-client">Preset Tabs in Evergreen Client</h2>
-<p>To have preset tabs waiting when Evergreen opens you will need to modify the
-<em>Evergreen shortcut</em> on your desktop.</p>
-<p>. First, you need to copy your shortcut. There are a couple of ways to do this. 
-.. Right-mouse click and drag icon; upon release select <em>Create Shortcut
-Here</em>. 
-+
-image::media/create_shortcut_here.png[]
-+
-.. Right-mouse click icon, select <em>Send to</em>, and select <em>Desktop (create
-shortcut)</em>.
-+
-image::media/send_to_desktop.png[]
-+
-. Right-mouse click the new shortcut and select <em>Properties</em>.
-+
-image::media/shortcut_properties.png[]
-+
-. Listed in the <em>Target</em> box you will see something like the following path
-surrounded by quotation marks:   "C:\Program Files\Evergreen Staff Client MVLC\evergreen.exe"
-+
-image::media/shortcut_properties_window.png[]
-+
-. Place your cursor after the ending quotation mark. Enter a space after the
-last quotation mark and then enter the tab code from the list below. Add
-multiple tabs with a space separating them.
-+
-image::media/preset_tabs.png[]
-+
-For Example, to have Checkout, Checkin, Catalog Search, and a blank tab preset:
-"C:\Program Files\Evergreen Staff Client MVLC\evergreen.exe" -ilscheckout -ilscheckin -ilsurl XUL_OPAC_WRAPPER -ilstab
-. The following options are available:</p>
+<blockquote>
+<p>If <em>Status</em> indicates ``There was an error testing this server'', check for a typo in the <em>Hostname</em> field. The hostname should read: <em>catalog.sage.eou.edu</em>. </p>
+<p>If <em>version</em> indicates ``404 Not Found'', the server does not support the version
+of your staff client. You will need to download the correct version of Evergreen (currently 2.5.1) from </p>
+</blockquote>
 <ul>
-<li>-ILScheckin : Opens the Check In interface</li>
-<li>-ILScheckout : Opens the Check Out interface</li>
-<li>-ILSurl <url/constant> : Opens the specified page</li>
-<li>-ILSnew : Opens a new "menu" window</li>
-<li>-ILStab : Opens a new (default) tab</li>
-<li>-ILSnew_default : Opens a new "menu" window with a guaranteed default tab</li>
-<li>-ILSoffline/-ILSstandalone : Opens the standalone interface</li>
-<li>-ILSlogin : Opens the login page
-+
-[TIP]</li>
+<li>Enter your <em>Username</em> and <em>Password</em>  and  click <em>Login</em>.</li>
+<li>If this is the first time you login from the workstation, you will need to &lt;<register_workstation,register your workstation>&gt;. </li>
 </ul>
-<h2 id="useful-tab-codes">Useful Tab Codes</h2>
-<pre><code>  - -ilsurl XUL_PATRON_DISPLAY : Opens a Patron Search tab
-  - -ilsurl XUL_HOLD_PULL_LIST : Opens a Pull List tab
-  - -ilsurl XUL_HOLDS_BROWSER :        Opens a Browse Holds Shelf tab
-  - -ilsurl XUL_OPAC_WRAPPER : Opens an Advanced Catalog search tab
-  - -ilsurl XUL_COPY_STATUS : Opens an Item status by barcode tab
-  - -ilsurl XUL_RECORD_BUCKETS : Opens a Manage Record Buckets tab
-  - -ilsurl XUL_COPY_BUCKETS : Opens a Manage Copy Buckets tab
-  - -ilsurl XUL_MARC_NEW : Opens a Create new MARC record tab
-  - -ilsurl XUL_Z3950_IMPORT : Opens an Import record from Z39.50 tab
-  - To open two windows, one with checkin and checkout, one with Marc and Z39.50, use:
-  +
-  -ilscheckin -ilscheckout -ilsnew -ilsurl XUL_MARC_NEW -ilsurl XUL_Z3950_IMPORT
-</code></pre>
-<p>+
-. You may want to rename your shortcut to reflect its purpose. For example, you
-could have one icon set to open circulation-related tabs and one icon to open
-cataloging-related tabs. Right-mouse click and select <em>Rename</em> to do this.</p>
 <h2 id="auto-login">Auto Login</h2>
 <p>To use auto login, you will need to modify the <em>Evergreen shortcut</em> on your desktop. There are three new commands which are necessary for automatic login:</p>
 <ul>
@@ -237,45 +160,40 @@ cataloging-related tabs. Right-mouse click and select <em>Rename</em> to do this
 automatic login we need to modify the Evergreen shortcut on your desktop. If
 your shortcut already has preset tab commands, then place the automatic login
 commands after those commands. </p>
-<p>. First, if your workstation will have multiple logins (circ, cat, admin) you need to copy a shortcut for each. There are a couple of ways to do this.
-.. Right-mouse click and drag icon; upon release select <em>Create Shortcut Here</em>. 
+<ul>
+<li>First, if your workstation will have multiple logins (circ, cat, admin) you need to copy a shortcut for each. There are a couple of ways to do this.</li>
+<li>Right-mouse click and drag icon; upon release select <em>Create Shortcut Here</em>. </li>
+</ul>
+<p>image::media/create_shortcut_here.png[]</p>
+<ul>
+<li>Right-mouse click icon, select <em>Send to</em>, and select <em>Desktop (create shortcut)</em>.</li>
+</ul>
+<p>image::media/send_to_desktop.png[]</p>
+<ul>
+<li>Right-mouse click the new shortcut and select <em>Properties</em>.
 +
-image::media/create_shortcut_here.png[]
-+
-.. Right-mouse click icon, select <em>Send to</em>, and select <em>Desktop (create shortcut)</em>.
-+
-image::media/send_to_desktop.png[]
-+
-. Right-mouse click the new shortcut and select <em>Properties</em>.
-+
-image::media/shortcut_properties.png[]
-+
-Listed in the <em>Target</em> box you will see something like the following path
-surrounded by quotation marks: "C:\Program Files\Evergreen Staff Client MVLC\evergreen.exe"
-+
-image::media/shortcut_properties_window.png[]
-+
-. Place your cursor after the ending quotation mark and enter a space after the
-last quotation mark.
-+
-image::media/target_box.png[]
-+
-.. After the space enter the login code for username followed by a space and
-the username +
--ilsuser circuser
-.. Enter a space and then the login code for password followed by the password +
--ilspassword circpass
-.. Finally, enter the login code for host followed by a space and the host
-address (this is the exact address which shows up in the Server Hostname box
-when you manually login to the client. +
--ilshost evergreen.mvlcstaff.org
-+
-image::media/auto_login.png[]
-+
-[NOTE]
-When you double-click on the new shortcut it may seem like nothing is
-happening, but it really is! It takes the program a few moments to digest the
+image::media/shortcut_properties.png[]</li>
+</ul>
+<p>Listed in the <em>Target</em> box you will see something like the following path surrounded by quotation marks: "C:\Program Files\Evergreen Staff Client Sage\evergreen.exe"</p>
+<p>image::media/shortcut_properties_window.png[]</p>
+<ul>
+<li>Place your cursor after the ending quotation mark and enter a space after the last quotation mark.</li>
+</ul>
+<p>image::media/target_box.png[]</p>
+<ul>
+<li>After the space enter the login code for username followed by a space and the username
+    ilsuser circuser</li>
+<li>Enter a space and then the login code for password followed by the password
+    ilspassword circpass</li>
+<li>Finally, enter the login code for host followed by a space and the host address (this is the exact address which shows up in the Server Hostname box
+when you manually login to the client.
+    ilshost catalog.sage.eou.edu</li>
+</ul>
+<p>image::media/auto_login.png[]</p>
+<blockquote>
+<p>When you double-click on the new shortcut it may seem like nothing is happening, but it really is! It takes the program a few moments to digest the
 new requests and to do the login.</p>
+</blockquote>
 <h2 id="logging-out">Logging Out</h2>
 <p>indexterm:[staff client, logging out]</p>
 <p>There are several ways to end your Evergreen staff client session:</p>
