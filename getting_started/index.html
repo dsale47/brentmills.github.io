@@ -60,6 +60,10 @@
                             <a href="../cm_circulation_brief">Circulation Overview</a>
                         </li>
                     
+                        <li >
+                            <a href="../catm_cataloging_brief">Cataloging Overview</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -135,28 +139,29 @@
 <h2 id="logging-in-to-evergreen">Logging in to Evergreen</h2>
 <ul>
 <li>Select the <em>Locale</em> to match your language preference.  </li>
-<li>
-<p>Enter the <em>Hostname</em> of the Evergreen server you are connecting.</p>
-<p>Production: catalog.sage.eou.edu, Test: sage.eou.edu</p>
+<li>Enter the <em>Hostname</em> of the Evergreen server you are connecting.<ul>
+<li><span class="label label-primary">Main</span> <code>catalog.sage.eou.edu</code></br></li>
+<li><span class="label label-primary">Test</span> <code>sage.eou.edu</code></li>
+</ul>
 </li>
-<li>
-<p>Click <em>Test Server</em> to ensure that you are able to reach the server.  You should see <code>200 : OK</code> indicated in green for <em>Status</em> and <em>Version</em>.  </p>
-</li>
+<li>Click <em>Test Server</em> to ensure that you are able to reach the server.  You should see <code>200 : OK</code> indicated in green for <em>Status</em> and <em>Version</em>.  </li>
 </ul>
 <p>If <strong>Status</strong> indicates <code>There was an error testing this server</code>, check for a typo in the <strong>Hostname</strong> field. The hostname should read: <code>catalog.sage.eou.edu</code>.</p>
 <p>If <strong>Version</strong> indicates <code>404 Not Found</code>, the server does not support the version
 of your staff client. You will need to download the correct version of Evergreen (currently 2.5.1) from </p>
 <ul>
 <li>Enter your <strong>Username</strong> and <strong>Password</strong>  and  click <strong>Login</strong>.</li>
-<li>If this is the first time you login from the workstation, you will need to &lt;<register_workstation,register your workstation>&gt;. </li>
+<li>If this is the first time you login from the workstation, you will need to <a href="#setting-up-a-workstation">register your workstation</a>. </li>
 </ul>
 <h2 id="auto-login">Auto Login</h2>
 <p>To use auto login, you will need to modify the <em>Evergreen shortcut</em> on your desktop. There are three new commands which are necessary for automatic login:</p>
+<blockquote>
 <ul>
 <li>-ilsuser</li>
 <li>-ilspassword</li>
 <li>-ilshost</li>
 </ul>
+</blockquote>
 <p>You will need all three to have your client successfully login. To enable
 automatic login we need to modify the Evergreen shortcut on your desktop. If
 your shortcut already has preset tab commands, then place the automatic login
@@ -178,32 +183,42 @@ commands after those commands. </p>
 <ul>
 <li>Place your cursor after the ending quotation mark and enter a space after the last quotation mark.</li>
 </ul>
-<p>image::media/target_box.png[]</p>
+<p><img alt="" src="../images/gs_auto_login.png" /></p>
 <ul>
-<li>After the space enter the login code for username followed by a space and the username
-    ilsuser circuser</li>
-<li>Enter a space and then the login code for password followed by the password
-    ilspassword circpass</li>
-<li>Finally, enter the login code for host followed by a space and the host address (this is the exact address which shows up in the Server Hostname box
-when you manually login to the client.
-    ilshost catalog.sage.eou.edu</li>
-</ul>
-<blockquote>
-<p>When you double-click on the new shortcut it may seem like nothing is happening, but it really is! It takes the program a few moments to digest the
-new requests and to do the login.</p>
+<li>After the space enter the login code for username followed by a space and the username<blockquote>
+<p>ilsuser circuser</p>
 </blockquote>
+</li>
+<li>Enter a space and then the login code for password followed by the password<blockquote>
+<p>ilspassword circpass</p>
+</blockquote>
+</li>
+<li>Finally, enter the login code for host followed by a space and the host address (this is the exact address which shows up in the Server Hostname box when you manually login to the client.<blockquote>
+<p>ilshost catalog.sage.eou.edu</p>
+</blockquote>
+</li>
+</ul>
 <h2 id="logging-out">Logging Out</h2>
-<p>indexterm:[staff client, logging out]</p>
 <p>There are several ways to end your Evergreen staff client session:</p>
 <ul>
 <li>Click the <em>Exit Evergreen</em> button on the bottom of the login page.</li>
 <li>Click the <em>x</em> at the top left of the <em>login</em> window.</li>
 <li>Choose <em>File -&gt; Quit Program</em> from the menu of the application window.</li>
 </ul>
-<p><img alt="caution" src="../images/icons/caution.png" /></p>
 <p>Clicking the <em>x</em> on the application window (not the login window) will not exit Evergreen, but only close the window.
 A new application window can be opened by clicking <em>Open New Window</em> from the login window.</p>
 <h2 id="setting-up-a-workstation">Setting up a Workstation</h2>
+<p>Workstations are what Evergreen uses to determine which library your machine is pulling settings from. This is important for running reports, setting the self-check’s location, checking in items and assigning fines to patrons. If you are on circulation at PIERCE, both your login account and workstation should be set to PIERCE.</p>
+<p>When first logging into Evergreen on a new staff client, you will be prompted to create a workstation:</p>
+<p><img alt="" src="../images/gs_workstation_prompt.png" /></p>
+<p>Create a descriptive name for the workstation and continue on with “Start Evergreen”. Uncheck “Don’t ask at startup” if you have <a href="http://pines.georgialibraries.org/workstation-profiles">multiple workstations</a> you’re configuring for a single machine:</p>
+<p><img alt="" src="../images/gs_workstation_prompt2.png" /></p>
+<p>Enter the server address <code>catalog.sage.eou.edu</code> and login with your account credentials:</p>
+<p><img alt="" src="../images/gs_workstation_prompt3.png" /></p>
+<p>Choose a workstation name for the machine and the library (organization) you want it connected to. Then click “Register”:</p>
+<p><img alt="" src="../images/gs_workstation_prompt4.png" /></p>
+<p>You are now set up to do work connected to that library. Check the workstation name to ensure you’re logged in as the right library:</p>
+<p><img alt="" src="../images/gs_workstation_prompt5.png" /></p>
 <ul>
 <li>Configuring Receipt Templates</li>
 <li>Configuring Receipt Printers</li>

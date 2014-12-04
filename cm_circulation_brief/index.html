@@ -60,6 +60,10 @@
                             <a href=".">Circulation Overview</a>
                         </li>
                     
+                        <li >
+                            <a href="../catm_cataloging_brief">Cataloging Overview</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -99,7 +103,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../circulation_module">
+                    <a rel="prev" href="../catm_cataloging_brief">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -170,22 +174,22 @@ When we talk about the "Circulation" portion of Evergreen, we are talking primar
 <h2 id="check-in-items">Check In Items</h2>
 <p>This is the interface where you check in holdings within Evergreen.</p>
 <p><img alt="" src="../images/cm_checkinscreen.png" /></p>
-<hr />
 <ul>
 <li><em>Enter Barcode</em>: Where the item barcode gets scanned in.</li>
 <li><em>Effective Date</em>: Where you can manually set the check in time. Useful for when you want to backdate checkins for processing a night drop. The green check in banner will turn red to let you know that the check in date does not match the current one.</li>
-<li><em>Actions for Selected Items</em>: You can use these options after selecting one, or more copies after having being checked in. Note: If you're simply looking to edit a group of items or check their status, it's better to enter the item barcodes in the "Item Status" screen. That way, you will not trigger any transits, hold notices, or other alerts attached to the copies.</li>
-</ul>
-<hr />
-<p><img alt="" src="../images/cm_actionsforselcted.png" /></p>
-<ul>
-<li><em>Copy to Clipboard</em>: Allows you to copy a field from an item, group of items in the checkin screen. Best for using on single items when you need something numeric like a barcode. The fields will pop up in a window. Click on the field you want to copy. They will look like a website link. There is no confirmation message, but the information is saved to your clipboard and can be pasted.</li>
+<li>
+<p><em>Actions for Selected Items</em>: You can use these options after selecting one, or more copies after having being checked in. Note: If you're simply looking to edit a group of items or check their status, it's better to enter the item barcodes in the "Item Status" screen. That way, you will not trigger any transits, hold notices, or other alerts attached to the copies.
+<img alt="" src="../images/cm_actionsforselcted.png" /></p>
+</li>
+<li>
+<p><em>Copy to Clipboard</em>: Allows you to copy a field from an item, group of items in the checkin screen. Best for using on single items when you need something numeric like a barcode. The fields will pop up in a window. Click on the field you want to copy. They will look like a website link. There is no confirmation message, but the information is saved to your clipboard and can be pasted.</p>
+</li>
 <li><em>Add to Item Bucket</em>: See Cataloger Section.</li>
 <li><em>Show in Catalog</em>: Brings up the OPAC entry that you would see as a patron, or after having searched for that item using the search interface.</li>
 <li><em>Show Holds on Bib</em>: Displays the number of holds attached to that record. Not just that particular item, but the record it is attached to. This can include copies from outside of your library.</li>
 <li>
 <p><em>Show Item Details</em>: Brings up the "Item Status" screen that lists owning/circulating library information, circulation history, hold/transit information if it is captured for a hold or transit, and a read-only view of the MARC record. These is a good section to look to for item troubleshooting when looking for copy location, holdablity , and other information the Sage team can use when looking at misbehaving items.
-image:images/cm_itemstatus.png[]</p>
+<img alt="" src="../images/cm_itemstatus.png" /></p>
 </li>
 <li>
 <p><em>Show Last Few Circulations</em>: Brings up the last 3 patrons that have checked out that specific title.</p>
